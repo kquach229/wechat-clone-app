@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { Button , FormControl, Input, InputLabel } from '@material-ui/core';
-import { createMuiTheme, withStyles, makeStyles, ThemeProvider } from '@material-ui/core/styles';
-import { green, purple } from '@material-ui/core/colors';
+import { Button , FormControl, Input} from '@material-ui/core';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import { green } from '@material-ui/core/colors';
 import Message from "./Message";
 import db from './firebase';
 import firebase from "firebase";
@@ -52,7 +52,7 @@ function App() {
   });
   return (
     <div className="App">
-      <img className="logo" src={require("./wechat.png")}/>
+      <img className="logo" src={require("./wechat.png")} alt="wechat logo"/>
       <h2>Welcome {username}</h2>
       <form className="app__form">
             <FormControl className="app__formControl">
